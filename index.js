@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
     });
 });
 
-app.post('/paystackwebhook', (req, res) => {
+app.post('/webhook', (req, res) => {
     transactionLog.push(req.body);
     res.send(200);
 });
